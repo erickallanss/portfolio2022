@@ -13,7 +13,7 @@ export const Container = styled.div`
 `;
 
 export const Screen = styled.div`
-    width: 1400px;
+    width: 1200px;
     margin: 0 auto;
 `;
 
@@ -471,6 +471,7 @@ export const TelaInfType = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #000;
 `;
 
 export const iconType = styled.div`
