@@ -1,9 +1,8 @@
 
-import * as C from './styled';
-import logoPng from './assets/images/icons/logodev.svg';
-import WhatsappIcon from './assets/images/icons/icon1.png';
-import TwitterIcon from './assets/images/icons/icon3.png';
-import InstagramIcon from './assets/images/icons/icon4.png'
+import * as C from './styled'
+import CurriculumFile from './Resume - Erick Allan Silva.pdf';
+import logoPng from './assets/images/icons/logodev.svg'
+import WhatsappIcon from './assets/images/icons/icon1.png'
 import EmailIcon from './assets/images/icons/icon7.png'
 import LinkedinIcon from './assets/images/icons/icon11.png'
 import GitHubIcon from './assets/images/icons/icon10.png'
@@ -63,6 +62,7 @@ const App = () => {
                     <C.Buttons scrollChanges={scrollChanges}>
                         <C.ButtonMenu onClick={() => window.scrollTo(0, 1107.1999)}>Sobre</C.ButtonMenu>
                         <C.ButtonMenu onClick={() => window.scrollTo(0, 2036.8)}>Portfólio</C.ButtonMenu>
+                        <C.ButtonMenu><C.link href={CurriculumFile} download>Currículo</C.link></C.ButtonMenu>
                         <C.ButtonMenu onClick={() => window.scrollTo(0, 4396)}>Contato</C.ButtonMenu>
                     </C.Buttons>
                 </C.Mainbar>
