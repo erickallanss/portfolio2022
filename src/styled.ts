@@ -17,7 +17,7 @@ export const Screen = styled.div`
     margin: 0 auto;
 `;
 
-export const Mainbar = styled.nav(({scrollChanges}:Props) => (`
+export const Mainbar = styled.nav(({ scrollChanges }: Props) => (`
     width: inherit;
     height: 12vh;
     display: flex;
@@ -27,29 +27,29 @@ export const Mainbar = styled.nav(({scrollChanges}:Props) => (`
     position: fixed;
 `));
 
-export const Buttons = styled.div(({scrollChanges}:Props) => (`
-    display: ${scrollChanges? 'none' : 'flex'};
-    transition: 0.3s;
+export const Buttons = styled.div(({ scrollChanges }: Props) => (`
+    display: ${scrollChanges ? 'none' : 'flex'};
+    transition: 0.2s;
     :last-child {
         padding-right: 50px;
     }
 `));
 
 
-export const logo = styled.div(({scrollChanges}:Props)=>(`
+export const logo = styled.div(({ scrollChanges }: Props) => (`
     border-radius: 50%;
-    transition: 0.3s;
+    transition: 0.2s;
     padding: 20px;
-    margin-top: ${scrollChanges? '-100px' : '20px'};
+    margin-top: ${scrollChanges ? '-100px' : '20px'};
     cursor: pointer;
 `));
 
-export const logoImg = styled.img(({scrollChanges}:Props)=>(`
+export const logoImg = styled.img(({ scrollChanges }: Props) => (`
     margin-bottom: 0;
-    transition: 0.3s;
+    transition: 0.2s;
     margin-top: 100px;
     opacity: 1;
-    width: ${scrollChanges? '70px' : '200px'};
+    width: ${scrollChanges ? '70px' : '200px'};
     filter: brightness(1);
     transform: rotate(-10deg);
     cursor: pointer;
@@ -86,8 +86,8 @@ export const Sidebar = styled.aside`
     position: fixed;
 `;
 
-export const UpArrow = styled.div(({scrollChanges}:Props) => (`
-    display: ${scrollChanges? 'flex' : 'none'};
+export const UpArrow = styled.div(({ scrollChanges }: Props) => (`
+    display: ${scrollChanges ? 'flex' : 'none'};
     justify-content: center;
     align-items: center;
     position: fixed;    
@@ -97,6 +97,7 @@ export const UpArrow = styled.div(({scrollChanges}:Props) => (`
     border-radius: 30px;
     bottom: 30px;
     right: 30px;
+    transition: 0.2s;
     cursor: pointer;
         :hover {
             box-shadow: 0 0 5px #FFF;
@@ -108,14 +109,14 @@ export const UpArrowImg = styled.img`
 
 `;
 
-export const MediaIcon = styled.div(({scrollChanges}:Props) => (`
-    width: ${scrollChanges? '30px' : '50px'};
+export const MediaIcon = styled.div(({ scrollChanges }: Props) => (`
+    width: ${scrollChanges ? '30px' : '50px'};
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
     margin-top: 5px;
     margin-bottom: 5px;
-    transition: 0.3s;
+    transition: 0.2s;
         :last-child {
             padding-bottom: 30px;
         }
@@ -227,7 +228,7 @@ export const ButtonNextProject = styled.div`
     padding 20px 40px;
     border-radius: 30px;
     margin-bottom: 200px;
-    transition: 0.3;
+    transition: 0.2s;
     cursor: pointer;
     font-size: 18px;
     margin-top: 50px;
@@ -244,27 +245,40 @@ export const ButtonPreviousProject = styled.div`
     color: #FFF;
     padding 20px 40px;
     border-radius: 30px;
-    transition: 0.3;
+    transition: 0.2s;
     cursor: pointer;
     font-size: 18px;
     margin-bottom: 50px;
         :hover {
             background-color: #FFF;
             color: #00000F;
-            box-shadow: 0 0 5px #FFF;
+            box-shadow: 0 0 10px #FFF;
         }
 `;
 
 export const ProjectScreen = styled.div`
-    border: 1px solid #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 500px;
     height: 300px;
     margin: 20px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+`;
+
+export const link = styled.a`
+    text-decoration: none;
+    color: inherit;
+`;
+
+export const ProjectPhoto = styled.img`
+    max-width: 100%;
+    border: 3px solid #FFF;
+    border-radius: 10px;
+    transition: 0.2s;
+    :hover {
+        box-shadow: 0 0 20px #FFF;
+        border: 3px solid #FFF;
+    }
 `;
 
 export const ProjectDescription = styled.div`
@@ -284,7 +298,11 @@ export const ProjectTitle = styled.h2`
     text-transform: uppercase;
     margin: 0;
     padding: 0;
-`;
+    transition: 0.2s;
+    :hover {
+        text-shadow: 0 0 2px #f9a826;
+        color: #f9a826;
+    }`;
 
 export const ProjectDescriptionText = styled.div`
 
@@ -293,6 +311,7 @@ export const ProjectDescriptionText = styled.div`
 export const ProjectUsedTechnologies = styled.div`
 
 `;
+
 
 export const ContentPortfolio = styled.div`
     display: flex;
@@ -322,7 +341,7 @@ export const CompContato = styled.div`
     border-radius: 20px;
     border: 3px solid #FFF;
     box-shadow: 0 0 3px #FFF;
-    transition: 0.3s;
+    transition: 0.2s;
     justify-content: center;
     background-color: #FFF;
         :hover {

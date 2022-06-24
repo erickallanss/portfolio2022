@@ -28,6 +28,9 @@ import MicIcon from './assets/images/icons/mic.png'
 import SmileIcon from './assets/images/icons/emojiicon.png'
 import ClipIcon from './assets/images/icons/clipicon.png'
 import CameraIcon from './assets/images/icons/camera.png'
+import Project1Photo from './assets/images/project1.jpg'
+import Project2Photo from './assets/images/project2.jpg'
+import Project3Photo from './assets/images/project3.jpg'
 import imageHome1 from './assets/images/image2.svg';
 import { useState, useEffect } from 'react';
 
@@ -70,12 +73,6 @@ const App = () => {
                         </C.MediaIcon>
                         <C.MediaIcon scrollChanges={scrollChanges}>
                             <a href='mailto:erickallann@gmail.com' rel="noreferrer" target='_blank'><C.MediaIconImg src={EmailIcon} /></a>
-                        </C.MediaIcon>
-                        <C.MediaIcon scrollChanges={scrollChanges}>
-                            <a href='https://twitter.com/allansantosdev' rel="noreferrer" target='_blank'><C.MediaIconImg src={TwitterIcon} /></a>
-                        </C.MediaIcon>
-                        <C.MediaIcon scrollChanges={scrollChanges}>
-                            <a href='https://instagram.com/erickallann' rel="noreferrer" target='_blank'><C.MediaIconImg src={InstagramIcon} /></a>
                         </C.MediaIcon>
                         <C.MediaIcon scrollChanges={scrollChanges}>
                             <a href='https://github.com/erickallandev' rel="noreferrer" target='_blank'><C.MediaIconImg src={GitHubIcon} /></a>
@@ -141,49 +138,55 @@ const App = () => {
                             </C.Typing>
                             <C.DevelopedProject>
                                 <C.ProjectScreen>
-                                    Photo
+                                    <a target='_blank' href='https://eatodolist.netlify.app'>
+                                        <C.ProjectPhoto src={Project1Photo} alt='' />
+                                    </a>
                                 </C.ProjectScreen>
                                 <C.ProjectDescription>
                                     <C.ProjectTitle>
-                                        To-Do List
+                                        <C.link target='_blank' href='https://eatodolist.netlify.app'>To-Do List </C.link>
                                     </C.ProjectTitle>
                                     <C.ProjectDescriptionText>
                                         Projeto de to-do list desenvolvido com ReactJS. Através da aplicação web é possível adicionar novos ítens à lista, marcá-los como feito, desmarcá-los ou excluí-los. Essa to-do list pode ser útil para listar as atividades pendentes do dia e controlá-las à medida que forem sendo concluídas.
                                     </C.ProjectDescriptionText>
                                     <C.ProjectUsedTechnologies>
-                                        HTML5, CSS3, ReactJS, Styled-Components.
+                                        HTML5, CSS3, ReactJS, Styled-Components, Typescript.
                                     </C.ProjectUsedTechnologies>
                                 </C.ProjectDescription>
                             </C.DevelopedProject>
                             <C.ButtonNextProject onClick={() => window.scrollTo(0, 2840)}>Próximo projeto</C.ButtonNextProject>
 
-                            <C.ButtonPreviousProject onClick={() => window.scrollTo(0, 2036.8)}>Projeto anterior</C.ButtonPreviousProject>
+                            <C.ButtonPreviousProject onClick={() => window.scrollTo(0, 2040)}>Projeto anterior</C.ButtonPreviousProject>
                             <C.DevelopedProject>
                                 <C.ProjectScreen>
-                                    Photo
+                                    <a target='_blank' href='https://easorteieumapessoa.netlify.app'>
+                                        <C.ProjectPhoto src={Project2Photo} alt='' />
+                                    </a>
                                 </C.ProjectScreen>
                                 <C.ProjectDescription>
                                     <C.ProjectTitle>
-                                        Centrifuge Calculator
+                                        <C.link target='_blank' href='https://easorteieumapessoa.netlify.app'> Sorteie uma pessoa </C.link>
                                     </C.ProjectTitle>
                                     <C.ProjectDescriptionText>
-                                        Centrifuge Calculator é uma calculadora de parâmetros que geralmente são utilizados em centrífugas de laboratórios. É comum que seja necesário converter parâmetros utilizando o raio do rotor da centrífuga, além da força centrífuga e a quantidade de rotações por minuto adotadas em seu uso. Dessa forma, inserindo dois desses três parâmetros, pode-se obter facilmente o terceiro parâmetro, de forma simples, rápida, e confiável.
+                                    Sorteie uma pessoa é um projeto desenvolvido em ReactJS, Typescript e Styled Components. A aplicação tem como objetivo cadastrar nomes de indivíduos que participarão de um sorteio, deletar nomes da lista do sorteio e realizar o sortear de um desses indivíduos aleatoriamente, retornando o nome do sortudo. 
                                     </C.ProjectDescriptionText>
                                     <C.ProjectUsedTechnologies>
-                                        HTML5, CSS3, Javascript, Bootstrap.
+                                    ReactJS, Typescript, Styled Components.
                                     </C.ProjectUsedTechnologies>
                                 </C.ProjectDescription>
                             </C.DevelopedProject>
-                            <C.ButtonNextProject onClick={() => window.scrollTo(0, 3595.1999)}>Próximo projeto</C.ButtonNextProject>
+                            <C.ButtonNextProject onClick={() => window.scrollTo(0, 3640)}>Próximo projeto</C.ButtonNextProject>
 
                             <C.ButtonPreviousProject onClick={() => window.scrollTo(0, 2840)}>Projeto anterior</C.ButtonPreviousProject>
                             <C.DevelopedProject>
-                                <C.ProjectScreen>
-                                    Photo
+                            <C.ProjectScreen>
+                                    <a target='_blank' href='https://eaficticiawebsite.netlify.app'>
+                                        <C.ProjectPhoto src={Project3Photo} alt='' />
+                                    </a>
                                 </C.ProjectScreen>
                                 <C.ProjectDescription>
-                                    <C.ProjectTitle>
-                                        Fictícia Technologies
+                                <C.ProjectTitle>
+                                        <C.link target='_blank' href='https://eaficticiawebsite.netlify.app'>Fictícia Technologies </C.link>
                                     </C.ProjectTitle>
                                     <C.ProjectDescriptionText>
                                         Trata-se do website de uma empresa fictícia de nome "Fictícia", do ramo de tecnologias. O site foi desenvolvido para fins de treinamento e aprendizado sobre a atualização do Bootstrap. 
