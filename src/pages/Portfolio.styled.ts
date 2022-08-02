@@ -98,12 +98,23 @@ export const BodyImage = styled.div`
     display: flex;
     margin: 0 auto;
         @media (min-width: 1024px) {
+            transition: 0.3s;
             width: 50vw;
+            border: 2px solid transparent;
+            border-radius: 20px;
+                :hover {
+                    border: 2px solid #fff;
+                    box-shadow: 0 0 20px #fff;
+                }
         }
 `;
 
 export const Image = styled.img`
     width: 100%;
+    height: 100%;
+    @media (min-width: 1024px) {
+        border-radius: 20px;
+    }
 `;
 
 export const LinkA = styled.a`
@@ -111,5 +122,12 @@ export const LinkA = styled.a`
     text-decoration: none;
     &:focus, &:hover, &:visited, &:link, &:active {
         text-decoration: none;
+    }
+    @media (min-width: 1024px) {
+        transition: 0.3s;
+        :hover {
+            color: #fff;
+            text-shadow: 0 0 10px #FFF;
+        }
     }
 `;
