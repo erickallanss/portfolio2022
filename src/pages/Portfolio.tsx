@@ -12,7 +12,13 @@ export const Portfolio = () => {
 
 
             <C.ProjectDiv>
+                <C.HeaderProjectMobo>
+                    <C.LinkA target='_blank' href='https://eatodolist.netlify.app'>
+                        To-do List
+                    </C.LinkA>
+                </C.HeaderProjectMobo>
                 <C.BodyProject>
+
                     <C.BodyImage>
                         <C.LinkA target='_blank' href='https://eatodolist.netlify.app'>
                             <C.Image src={Project1Photo} alt='' />
@@ -35,7 +41,13 @@ export const Portfolio = () => {
             </C.ProjectDiv>
 
             <C.ProjectDiv>
+            <C.HeaderProjectMobo>
+                            <C.LinkA target='_blank' href='https://easorteieumapessoa.netlify.app'>
+                                Sorteie uma pessoa
+                            </C.LinkA>
+                        </C.HeaderProjectMobo>
                 <C.BodyProject>
+
                     <C.BodyImage>
                         <C.LinkA target='_blank' href='https://easorteieumapessoa.netlify.app'>
                             <C.Image src={Project2Photo} alt='' />
@@ -61,6 +73,11 @@ export const Portfolio = () => {
 
 
             <C.ProjectDiv>
+            <C.HeaderProjectMobo>
+                            <C.LinkA target='_blank' href='https://eaficticiawebsite.netlify.app'>
+                                Fictícia Technologies
+                            </C.LinkA>
+                        </C.HeaderProjectMobo>
                 <C.BodyProject>
                     <C.BodyImage>
                         <C.LinkA target='_blank' href='https://eaficticiawebsite.netlify.app'>

@@ -15,7 +15,7 @@ export const ProjectDiv = styled.div`
         :nth-child(1) {
             margin-top: 150px;
         }
-    margin-bottom: 30px;
+    margin-bottom: 100px;
         @media (min-width: 1024px) {
             display: flex;
             flex-direction: column;
@@ -30,13 +30,23 @@ export const ProjectDiv = styled.div`
 `;
 
 export const HeaderProject = styled.h1`
+    display: none;
+        @media (min-width: 1024px) {
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+            margin-top: 50px;
+        }
+`;
+
+export const HeaderProjectMobo = styled.h1`
+    display: flex;
+    justify-content: center;
     color: #F9A826;
     text-align: center;
     font-size: 1.8rem;
-    margin: 0px 0 20px 0;
         @media (min-width: 1024px) {
-            font-size: 2rem;
-            margin-top: 50px;
+            display: none;
         }
 `;
 
@@ -74,10 +84,12 @@ export const TechDescription = styled.div`
     text-align: center;
     width: 80vw;
     margin: 20px auto 0 auto;
+    @media (min-width: 1024px) {
     :nth-last-child(1) {
             margin-bottom: 50px;
             width: 30vw;
         }
+    }
 `;
 
 export const BodyImage = styled.div`
