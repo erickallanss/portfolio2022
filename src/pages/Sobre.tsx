@@ -13,7 +13,7 @@ import Image from '../assets/images/icons/SobreImage.svg';
 
 export const Sobre = () => {
     return (
-        <>
+        <C.SobreContent>
             <C.ContentHeader>
                 Olá! Tudo bem?
             </C.ContentHeader>
@@ -62,6 +62,6 @@ export const Sobre = () => {
                     <C.IconImg src={GitIcon} alt='' />
                 </C.TechIcon>
             </C.TechIcons>
-        </>
+        </C.SobreContent>
     );
 }

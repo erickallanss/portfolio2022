@@ -1,18 +1,23 @@
 import styled from 'styled-components';
 
+export const SobreContent = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
 export const ContentHeader = styled.h1`
     color: #F9A826;
     text-align: center;
     font-size: 1.8rem;
     margin: 50px 0 10px 0;
         @media (min-width:1024px) {
-            font-size: 2rem;
+            font-size: 2.2rem;
         }
 `;
 
 export const ImageDiv = styled.div`
     margin: auto;
-    width: 60vw;
+    width: 80%;
     max-width: 320px;
     margin: 30px auto;
         @media (min-width:1024px) {
@@ -31,8 +36,9 @@ export const ContentText = styled.div`
     color: #fff;
     margin: 20px 0;
         @media (min-width:1024px) {
-                width: 60vw;
+                width: 70%;
                 margin: 20px auto;
+                font-size: 1.5rem;
         }
 `;
 
@@ -47,7 +53,7 @@ export const TechIcons = styled.div`
             margin-top: 20px;
         }
         @media (min-width: 1024px) {
-            margin-top: 30px;
+            margin-top: 0px;
             :nth-last-child(3) {
             margin-top: 60px;
         }

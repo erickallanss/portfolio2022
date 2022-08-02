@@ -41,7 +41,7 @@ export const Description = styled.div`
     width: 80vw;
     margin: 20px auto 0 auto;
         @media (min-width:1024px) {
-            width: 60vw;
+            width: 65vw;
     }
 `;
 
