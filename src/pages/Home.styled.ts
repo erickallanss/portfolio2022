@@ -19,6 +19,10 @@ export const HomeImage = styled.img`
     transition: 0.3s;
         @media (min-width: 1024px) {
             max-width: 480px;
+            :hover {
+                    filter: drop-shadow(0 0 30px #FFF);
+                    cursor: pointer;
+                }
         }
 `;
 
@@ -30,6 +34,9 @@ export const ContentHeader = styled.h1`
     transition: 0.3s;
         @media (min-width: 1024px) {
             font-size: 2.2rem;
+                :hover {
+                    text-shadow: 0 0 20px #F9A826;
+                }
         }
 `;
 
@@ -44,5 +51,8 @@ export const ContentText = styled.div`
     transition: 0.3s;
         @media (min-width: 1024px) {
             font-size: 1.8rem;
+            :hover {
+                    text-shadow: 0 0 20px #FFF;
+                }
         }
 `;
