@@ -12,6 +12,7 @@ export const ContentHeader = styled.h1`
     margin: 50px 0 10px 0;
         @media (min-width:1024px) {
             font-size: 2.2rem;
+            text-transform: uppercase;
         }
 `;
 
