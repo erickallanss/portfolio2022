@@ -90,7 +90,8 @@ export const Content = styled.div`
     background-color: #00000f;
     min-height: 80vh;
         @media (min-width: 1024px) {
-            width: 90vw;
+            width: 80vw;
+            min-height: calc(100vh - 25vh - 4px);
             margin-left: 10vw;
         }
 `;
@@ -176,3 +177,16 @@ export const LinkA = styled.a`
     }
 `;
 
+export const Footer = styled.div`
+    display: none;
+    color: #FFF;
+    text-align: center;
+    transition: 0.3s;
+        @media (min-width: 1024px) {
+            display: flex;
+            justify-content: center;
+            margin-left: 10vw;
+            padding: 10px;
+            margin: 0 0 0 10vw;
+        }
+`;

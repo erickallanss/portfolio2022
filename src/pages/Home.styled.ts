@@ -18,7 +18,7 @@ export const HomeImage = styled.img`
     max-width: 360px;
     transition: 0.3s;
         @media (min-width: 1024px) {
-            max-width: 520px;
+            max-width: 480px;
         }
 `;
 
@@ -44,22 +44,5 @@ export const ContentText = styled.div`
     transition: 0.3s;
         @media (min-width: 1024px) {
             font-size: 1.8rem;
-        }
-`;
-
-export const Footer = styled.div`
-    display: none;
-    color: #FFF;
-    text-align: center;
-    transition: 0.3s;
-        @media (min-width: 1024px) {
-            display: flex;
-            position: fixed;
-            bottom: 0;
-            padding: 20px 0;
-            left: 0;
-            width: 90vw;
-            justify-content: center;
-            margin-left: 10vw;
         }
 `;

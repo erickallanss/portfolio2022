@@ -73,15 +73,6 @@ const App = () => {
 
 
                 </C.MainBar>
-                <C.Content>
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/sobre" element={<Sobre />} />
-                        <Route path="/portfolio" element={<Portfolio />} />
-                        <Route path="/contato" element={<Contato />} />
-                        <Route path="*" element={<NotFound />} />
-                    </Routes>
-                </C.Content>
                 <C.SocialBar>
                     <a href='https://wa.me/5584996501098' target='_blank' rel="noreferrer"><C.SocialIcon src={WhatsappIcon} /></a>
                     <a href='https://www.linkedin.com/in/erickallansilva/' target='_blank' rel="noreferrer"><C.SocialIcon src={LinkedinIcon} /></a>
@@ -100,8 +91,20 @@ const App = () => {
 
 
                 </C.MenuScreen>
+                <C.Content>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/sobre" element={<Sobre />} />
+                        <Route path="/portfolio" element={<Portfolio />} />
+                        <Route path="/contato" element={<Contato />} />
+                        <Route path="*" element={<NotFound />} />
+                    </Routes>
+                </C.Content>
+                <C.Footer> EA Web Dev © 2022 - Developer by Erick Allan Silva </C.Footer>
             </C.Screen>
+
         </C.Container>
+        
     );
 }
 
