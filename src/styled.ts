@@ -20,8 +20,8 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    min-height: 100vh;
     @media (min-width: 1024px) {
-        min-height: 100vh;
     }
 `;
 
