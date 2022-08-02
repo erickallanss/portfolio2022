@@ -10,6 +10,10 @@ type MenuActive = {
     isActive?: boolean
 }
 
+type Props = {
+    scrollChanges: boolean
+}
+
 export const Container = styled.div`
     background-color: #00000F;
     display: flex;
@@ -24,7 +28,7 @@ export const Screen = styled.div`
     align-items: center;
 `;
 
-export const MainBar = styled.nav`
+export const MainBar = styled.nav(({ scrollChanges }: Props) => (`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +36,10 @@ export const MainBar = styled.nav`
     width: 100%;
     background-color: #00000F;
     height: 100px;
-`;
+        @media (min-width: 1024px) {
+            display: ${scrollChanges ? 'none' : 'flex'}
+        }
+`));
 
 export const Logo = styled.img`
     min-height: 50px;
@@ -66,7 +73,7 @@ export const Menu = styled.div`
         }
 `;
 
-export const MenuItem = styled.div(({ isActive }: MenuActive ) => (`
+export const MenuItem = styled.div(({ isActive }: MenuActive) => (`
     color: ${isActive ? '#F9A826' : '#FFF'};
     font-size: 1.1rem;
     padding: 10px 20px;
@@ -154,7 +161,7 @@ export const Item = styled.div`
     text-transform: uppercase;
 `;
 
-export const closeIcon = styled.img(({menuOn}: PropsMenu) => (`
+export const closeIcon = styled.img(({ menuOn }: PropsMenu) => (`
     position: fixed;
     height: 20px;
     top: 40px;
@@ -188,5 +195,34 @@ export const Footer = styled.div`
             margin-left: 10vw;
             padding: 10px;
             margin: 0 0 0 10vw;
+        }
+`;
+
+export const ArrowToTop = styled.div(({ scrollChanges }: Props) => (`
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;    
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    bottom: 30px;
+    right: 30px;
+    transition: 0.2s;
+    cursor: pointer;
+        :hover {
+            box-shadow: 0 0 5px #FFF;
+            background-color: #FFF;
+        }
+                @media (min-width: 1024px) {
+                    display: ${scrollChanges ? 'fixed' : 'none'}
+                }
+`));
+
+export const ArrowImg = styled.img`
+    display: none;
+        @media (min-width: 1024px) {
+            display: flex;
         }
 `;

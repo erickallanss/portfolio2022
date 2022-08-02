@@ -33,22 +33,28 @@ import { NotFound } from './pages/NotFound';
 
 const App = () => {
     const [menuOn, setMenuOn] = useState(false);
-
-    const [isActive, setIsActive] = useState(true);
+    const [scrollChanges, setScrollChanges] = useState(false);
 
     const handleClickMenu = () => {
         menuOn ? setMenuOn(false) : setMenuOn(true)
-        console.log(menuOn)
     }
 
-    const handleMenuActive = () => {
-        
-    }
+    useEffect(function () {
+        function scrollPosition() {
+            if (window.scrollY > 50) {
+                setScrollChanges(true)
+            } else {
+                setScrollChanges(false)
+            }
+        }
+
+        window.addEventListener('scroll', scrollPosition);
+    }, [])
 
     return (
         <C.Container>
             <C.Screen>
-                <C.MainBar>
+                <C.MainBar scrollChanges={scrollChanges}>
                     <C.Logo src={logoPng} />
                     <C.MenuIcon src={menuIcon} onClick={handleClickMenu} />
 
@@ -57,16 +63,16 @@ const App = () => {
                         <C.MenuItem onClick={(e) => handleClickMenu}>
                             <C.StyledLink to='/'>Início</C.StyledLink>
                         </C.MenuItem>
-                        <C.MenuItem onClick={handleMenuActive}>
+                        <C.MenuItem>
                             <C.StyledLink to='/sobre'>Sobre</C.StyledLink>
                         </C.MenuItem>
-                        <C.MenuItem onClick={handleMenuActive}>
+                        <C.MenuItem>
                             <C.StyledLink to='/portfolio'>Portfólio</C.StyledLink>
                         </C.MenuItem>
                         <C.MenuItem>
                             <C.LinkA href={ResumeFile} download>Currículo</C.LinkA>
                         </C.MenuItem>
-                        <C.MenuItem onClick={handleMenuActive}>
+                        <C.MenuItem>
                             <C.StyledLink to='/contato'>Contato</C.StyledLink>
                         </C.MenuItem>
                     </C.Menu>
@@ -100,6 +106,9 @@ const App = () => {
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </C.Content>
+                <C.ArrowToTop scrollChanges = {scrollChanges} onClick={() => window.scrollTo(0, 0)}>
+                    <C.ArrowImg src={UpArrowIcon} alt='' />
+                </C.ArrowToTop>
                 <C.Footer> EA Web Dev © 2022 - Developer by Erick Allan Silva </C.Footer>
             </C.Screen>
 
