@@ -20,6 +20,9 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    @media (min-width: 1024px) {
+        min-height: 100vh;
+    }
 `;
 
 export const Screen = styled.div`

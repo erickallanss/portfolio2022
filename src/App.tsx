@@ -99,7 +99,7 @@ const App = () => {
                 <C.ArrowToTop scrollChanges = {scrollChanges} onClick={() => window.scrollTo(0, 0)}>
                     <C.ArrowImg src={UpArrowIcon} alt='' />
                 </C.ArrowToTop>
-                <C.Footer> EA Web Dev © 2022 - Developer by Erick Allan Silva </C.Footer>
+                <C.Footer> EA Web Dev © 2022 - Developed by Erick Allan Silva </C.Footer>
             </C.Screen>
 
         </C.Container>
