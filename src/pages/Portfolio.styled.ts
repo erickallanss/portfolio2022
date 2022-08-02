@@ -97,6 +97,7 @@ export const BodyImage = styled.div`
     max-width: 520px;
     display: flex;
     margin: 0 auto;
+    background-color: #FFF;
         @media (min-width: 1024px) {
             transition: 0.3s;
             width: 50vw;
