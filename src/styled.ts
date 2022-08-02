@@ -40,6 +40,11 @@ export const Logo = styled.img`
     height: 15vw;
     margin-left: 30px;
     cursor: pointer;
+    transition: 0.3s;
+        @media (min-width: 1024px) {
+            max-height: 180px;
+            margin-top: 120px;
+        }
 `;
 
 export const MenuIcon = styled.img`
@@ -102,6 +107,7 @@ export const SocialBar = styled.div`
         margin-left: 30px;
         margin-bottom: 30px;
         justify-content: flex-end;
+        background-color: transparent;
         }
     `;
 
