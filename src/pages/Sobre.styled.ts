@@ -69,6 +69,13 @@ export const TechIcon = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
+        @media (min-width: 1024px) {
+            :hover {
+                box-shadow: 0 0 50px #FFF;
+                cursor: pointer;
+            }
+        }
 `;
 
 export const IconImg = styled.img`
