@@ -34,14 +34,15 @@ export const MainBar = styled.nav(({ scrollChanges }: Props) => (`
     align-items: center;
     position: fixed;
     width: 100%;
-    background-color: #00000F;
     height: 100px;
+    transition: 0.3s;
+    background-color: #00000F;
         @media (min-width: 1024px) {
-            display: ${scrollChanges ? 'none' : 'flex'}
+            background-color: transparent;
         }
 `));
 
-export const Logo = styled.img`
+export const Logo = styled.img(({ scrollChanges }: Props) => (`
     min-height: 50px;
     max-height: 60px;
     height: 15vw;
@@ -50,10 +51,11 @@ export const Logo = styled.img`
     transition: 0.3s;
         @media (min-width: 1024px) {
             max-height: 180px;
-            margin-top: 8%;
-            width: 15vw;
+            margin-top: ${scrollChanges ? '2%' : '8%'};
+            margin-left: ${scrollChanges ? '40px' : '30px'};
+            width: ${scrollChanges ? '80px' : '15vw'};
         }
-`;
+`));
 
 export const MenuIcon = styled.img`
     min-height: 30px;
@@ -65,13 +67,13 @@ export const MenuIcon = styled.img`
         }
 `;
 
-export const Menu = styled.div`
+export const Menu = styled.div(({ scrollChanges }: Props) => (`
     display: none;
     margin-right: 50px;
         @media (min-width: 1024px) {
-            display: flex;
+            display: ${scrollChanges ? 'none' : 'flex'};
         }
-`;
+`));
 
 export const MenuItem = styled.div(({ isActive }: MenuActive) => (`
     color: ${isActive ? '#F9A826' : '#FFF'};
@@ -124,12 +126,12 @@ export const SocialBar = styled.div`
         }
     `;
 
-export const SocialIcon = styled.img`
+export const SocialIcon = styled.img(({ scrollChanges }: Props) => (`
     min-width: 50px;
-    width: 7vh;
+    width: 5vw;
     height: auto;
         @media (min-width: 1024px) {
-            width: 5vh;
+            width: ${scrollChanges ? '3vw' : '5vw'};
             transition: 0.2s;
             margin-bottom: 10px;
                 :hover {
@@ -138,7 +140,7 @@ export const SocialIcon = styled.img`
                 margin-top: 15px;
         }
         }
-`;
+`));
 
 export const MenuScreen = styled.div(({ menuOn }: PropsMenu) => (`
     background-color: rgba(0, 0, 0, 0.9);

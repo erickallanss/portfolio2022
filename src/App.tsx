@@ -55,11 +55,11 @@ const App = () => {
         <C.Container>
             <C.Screen>
                 <C.MainBar scrollChanges={scrollChanges}>
-                    <C.Logo src={logoPng} />
+                    <C.Logo scrollChanges={scrollChanges} src={logoPng} />
                     <C.MenuIcon src={menuIcon} onClick={handleClickMenu} />
 
 
-                    <C.Menu>
+                    <C.Menu scrollChanges={scrollChanges}>
                         <C.MenuItem onClick={(e) => handleClickMenu}>
                             <C.StyledLink to='/'>Início</C.StyledLink>
                         </C.MenuItem>
@@ -80,10 +80,10 @@ const App = () => {
 
                 </C.MainBar>
                 <C.SocialBar>
-                    <a href='https://wa.me/5584996501098' target='_blank' rel="noreferrer"><C.SocialIcon src={WhatsappIcon} /></a>
-                    <a href='https://www.linkedin.com/in/erickallansilva/' target='_blank' rel="noreferrer"><C.SocialIcon src={LinkedinIcon} /></a>
-                    <a href='mailto:erickallann@gmail.com' target='_blank' rel="noreferrer"><C.SocialIcon src={EmailIcon} /></a>
-                    <a href='https://github.com/erickallandev' target='_blank' rel="noreferrer"><C.SocialIcon src={GitHubIcon} /></a>
+                    <a href='https://wa.me/5584996501098' target='_blank' rel="noreferrer"><C.SocialIcon src={WhatsappIcon} scrollChanges={scrollChanges}/></a>
+                    <a href='https://www.linkedin.com/in/erickallansilva/' target='_blank' rel="noreferrer"><C.SocialIcon src={LinkedinIcon}  scrollChanges={scrollChanges}/></a>
+                    <a href='mailto:erickallann@gmail.com' target='_blank' rel="noreferrer"><C.SocialIcon src={EmailIcon}  scrollChanges={scrollChanges}/></a>
+                    <a href='https://github.com/erickallandev' target='_blank' rel="noreferrer"><C.SocialIcon src={GitHubIcon}  scrollChanges={scrollChanges}/></a>
                 </C.SocialBar>
                 <C.MenuScreen menuOn={menuOn}>
                     <C.closeIcon src={closeIcon} menuOn={menuOn} onClick={handleClickMenu}></C.closeIcon>
