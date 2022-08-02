@@ -9,19 +9,9 @@ import LinkedinIcon from './assets/images/icons/icon11.png'
 import GitHubIcon from './assets/images/icons/icon10.png'
 import closeIcon from './assets/images/icons/closeIcon.png'
 import UpArrowIcon from './assets/images/icons/up-arrow.png'
-import LeftArrowIcon from './assets/images/icons/left-arrow.png'
-import CircleIcon from './assets/images/icons/circle.png'
-import SquareIcon from './assets/images/icons/square.png'
-import LeftIcon from './assets/images/icons/left-arrow2.png'
-import CamIcon from './assets/images/icons/cam.png'
-import TelIcon from './assets/images/icons/phone.png'
-import MoreIcon from './assets/images/icons/more.png'
-import MicIcon from './assets/images/icons/mic.png'
-import SmileIcon from './assets/images/icons/emojiicon.png'
-import ClipIcon from './assets/images/icons/clipicon.png'
-import CameraIcon from './assets/images/icons/camera.png'
-import React, { useState, useEffect, ReactComponentElement } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+
+import { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Sobre } from './pages/Sobre';
 import { Portfolio } from './pages/Portfolio';
