@@ -17,7 +17,7 @@ export const HomeImage = styled.img`
     width: 80vw;
     max-width: 360px;
         @media (min-width: 1024px) {
-            
+            max-width: 520px;
         }
 `;
 
@@ -26,6 +26,9 @@ export const ContentHeader = styled.h1`
     text-align: center;
     font-size: 1.8rem;
     margin: 20px;
+        @media (min-width: 1024px) {
+            font-size: 2.2rem;
+        }
 `;
 
 export const ContentText = styled.div`
@@ -36,6 +39,9 @@ export const ContentText = styled.div`
     justify-content: center;
     padding: 20px 20px;
     flex: 4;
+        @media (min-width: 1024px) {
+            font-size: 1.8rem;
+        }
 `;
 
 export const Footer = styled.div`
