@@ -43,7 +43,8 @@ export const Logo = styled.img`
     transition: 0.3s;
         @media (min-width: 1024px) {
             max-height: 180px;
-            margin-top: 120px;
+            margin-top: 8%;
+            width: 15vw;
         }
 `;
 
@@ -88,6 +89,10 @@ export const Content = styled.div`
     width: 80vw;
     background-color: #00000f;
     min-height: 80vh;
+        @media (min-width: 1024px) {
+            width: 90vw;
+            margin-left: 10vw;
+        }
 `;
 
 export const SocialBar = styled.div`
