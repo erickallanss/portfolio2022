@@ -2,6 +2,7 @@ import * as C from './Portfolio.styled';
 import Project1Photo from '../assets/images/project1.jpg'
 import Project2Photo from '../assets/images/project2.jpg'
 import Project3Photo from '../assets/images/project3.jpg'
+import Project4Photo from '../assets/images/project4.jpg'
 
 export const Portfolio = () => {
     return (
@@ -9,6 +10,37 @@ export const Portfolio = () => {
             <C.Title>
                 Projetos
             </C.Title>
+
+            <C.ProjectDiv>
+                <C.HeaderProjectMobo>
+                    <C.LinkA target='_blank' href='https://espacoprime.netlify.app'>
+                        Espaço Prime Wash & Parking
+                    </C.LinkA>
+                </C.HeaderProjectMobo>
+                <C.BodyProject>
+
+                    <C.BodyImage>
+                        <C.LinkA target='_blank' href='https://espacoprime.netlify.app'>
+                            <C.Image src={Project4Photo} alt='' />
+                        </C.LinkA>
+                    </C.BodyImage>
+                    <C.BodyText>
+                        <C.HeaderProject>
+                            <C.LinkA target='_blank' href='https://espacoprime.netlify.app'>
+                                Espaço Prime - Wash & Parking
+                            </C.LinkA>
+                        </C.HeaderProject>
+                        <C.Description>
+                            Website do Espaço Prime - Wash & Parking, empreendimento que oferece diversos serviços de lavagem detalhada de veículos, além de estacionamento, localizado em Natal/RN.  
+                        </C.Description>
+                        <C.TechDescription>
+                            ReactJS, Styled-Components, Typescript.
+                        </C.TechDescription>
+                    </C.BodyText>
+                </C.BodyProject>
+            </C.ProjectDiv>
+
+
 
 
             <C.ProjectDiv>
@@ -61,7 +93,7 @@ export const Portfolio = () => {
                         </C.HeaderProject>
 
                         <C.Description>
-                            Sorteie uma pessoa é um projeto desenvolvido em ReactJS, Typescript e Styled Components. A aplicação tem como objetivo cadastrar nomes de indivíduos que participarão de um sorteio, deletar nomes da lista do sorteio e realizar o sortear de um desses indivíduos aleatoriamente, retornando o nome do sortudo.
+                            Sorteie uma pessoa é um projeto desenvolvido em ReactJS. A aplicação tem como objetivo cadastrar nomes de indivíduos que participarão de um sorteio, deletar nomes da lista do sorteio e realizar o sortear de um desses indivíduos aleatoriamente, retornando o nome do sortudo.
                         </C.Description>
                         <C.TechDescription>
                             ReactJS, Styled-Components, Typescript.
@@ -92,7 +124,7 @@ export const Portfolio = () => {
                         </C.HeaderProject>
 
                         <C.Description>
-                            Trata-se do website de uma empresa fictícia de nome "Fictícia", do ramo de tecnologias. O site foi desenvolvido para fins de treinamento e aprendizado sobre a atualização do Bootstrap 5.
+                            Website de uma empresa fictícia de nome "Fictícia", do ramo de tecnologias. O site foi desenvolvido para fins de treinamento e aprendizado sobre a atualização do Bootstrap 5.
                         </C.Description>
                         <C.TechDescription>
                             HTML5, CSS3, Javascript e Bootstrap 5.
