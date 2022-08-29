@@ -31,10 +31,10 @@ export const Portfolio = () => {
                             </C.LinkA>
                         </C.HeaderProject>
                         <C.Description>
-                            Website do Espaço Prime - Wash & Parking, empreendimento que oferece diversos serviços de lavagem detalhada de veículos, além de estacionamento, localizado em Natal/RN.  
+                            Website do Espaço Prime - Wash & Parking, empreendimento localizado em Ponta Negra - Natal/RN, que disponibiliza serviços de estacionamento privado, além de diversas opções de serviços de estética automotiva. 
                         </C.Description>
                         <C.TechDescription>
-                            ReactJS, Styled-Components, Typescript.
+                            ReactJS, Styled-Components, Typescript e Firebase.
                         </C.TechDescription>
                     </C.BodyText>
                 </C.BodyProject>
