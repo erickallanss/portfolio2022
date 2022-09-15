@@ -45,28 +45,28 @@ export const Portfolio = () => {
 
             <C.ProjectDiv>
                 <C.HeaderProjectMobo>
-                    <C.LinkA target='_blank' href='https://eatodolist.netlify.app'>
-                        To-do List
+                    <C.LinkA target='_blank' href='https://fazerhojeapp.herokuapp.com/'>
+                        Fazer hoje App
                     </C.LinkA>
                 </C.HeaderProjectMobo>
                 <C.BodyProject>
 
                     <C.BodyImage>
-                        <C.LinkA target='_blank' href='https://eatodolist.netlify.app'>
+                        <C.LinkA target='_blank' href='https://fazerhojeapp.herokuapp.com/'>
                             <C.Image src={Project1Photo} alt='' />
                         </C.LinkA>
                     </C.BodyImage>
                     <C.BodyText>
                         <C.HeaderProject>
-                            <C.LinkA target='_blank' href='https://eatodolist.netlify.app'>
-                                To-do List
+                            <C.LinkA target='_blank' href='https://fazerhojeapp.herokuapp.com/'>
+                                Fazer hoje App
                             </C.LinkA>
                         </C.HeaderProject>
                         <C.Description>
-                            Projeto de to-do list desenvolvido com ReactJS. Através da aplicação web é possível adicionar novos ítens à lista, marcá-los como feito, desmarcá-los ou excluí-los. Essa to-do list pode ser útil para listar as atividades pendentes do dia e controlá-las à medida que forem sendo concluídas.
+                            Projeto desenvolvido para planejamento de atividades no início do dia. É possível adicionar novas tarefas, definí-las como concluídas, e deletá-las. As tarefas ficam armazenadas em um banco de dados, sendo possível acessá-las posteriormente de outros dispositivos. A aplicação web é responsiva e o Heroku foi utilizado para deploy, além do banco de dados PostgreSQL da mesma plataforma.
                         </C.Description>
                         <C.TechDescription>
-                            ReactJS, Styled-Components, Typescript.
+                            ReactJS, TailwindCSS, NodeJS, Express e PostgreSQL.
                         </C.TechDescription>
                     </C.BodyText>
                 </C.BodyProject>
