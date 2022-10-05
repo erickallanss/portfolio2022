@@ -1,5 +1,5 @@
 
-import * as C from './styled'
+import * as C from './App.styled'
 import ResumeFile from './Resume - Erick Allan Silva.pdf';
 import logoPng from './assets/images/icons/logodev.svg'
 import menuIcon from './assets/images/icons/menuIcon.png'
@@ -45,7 +45,7 @@ const App = () => {
         <C.Container>
             <C.Screen>
                 <C.MainBar scrollChanges={scrollChanges}>
-                    <C.Logo scrollChanges={scrollChanges} src={logoPng} />
+                    <C.Logo scrollChanges={scrollChanges} src={logoPng}></C.Logo>
                     <C.MenuIcon src={menuIcon} onClick={handleClickMenu} />
 
 

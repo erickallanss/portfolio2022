@@ -3,6 +3,7 @@ import Project1Photo from '../assets/images/project1.jpg'
 import Project2Photo from '../assets/images/project2.jpg'
 import Project3Photo from '../assets/images/project3.jpg'
 import Project4Photo from '../assets/images/project4.jpg'
+import Project5Photo from '../assets/images/project5.jpg'
 
 export const Portfolio = () => {
     return (
@@ -67,6 +68,35 @@ export const Portfolio = () => {
                         </C.Description>
                         <C.TechDescription>
                             ReactJS, TailwindCSS, NodeJS, Express e PostgreSQL.
+                        </C.TechDescription>
+                    </C.BodyText>
+                </C.BodyProject>
+            </C.ProjectDiv>
+
+            <C.ProjectDiv>
+                <C.HeaderProjectMobo>
+                    <C.LinkA target='_blank' href='https://healthclinica.netlify.app'>
+                        Health Clínica
+                    </C.LinkA>
+                </C.HeaderProjectMobo>
+                <C.BodyProject>
+
+                    <C.BodyImage>
+                        <C.LinkA target='_blank' href='https://healthclinica.netlify.app'>
+                            <C.Image src={Project5Photo} alt='' />
+                        </C.LinkA>
+                    </C.BodyImage>
+                    <C.BodyText>
+                        <C.HeaderProject>
+                            <C.LinkA target='_blank' href='https://healthclinica.netlify.app'>
+                                Health Clínica
+                            </C.LinkA>
+                        </C.HeaderProject>
+                        <C.Description>
+                            Modelo de website para clínicas médicas. Desenvolvido para fazer parte de um modelo generalista de website responsivo, adaptado para smartphones e desktops.
+                        </C.Description>
+                        <C.TechDescription>
+                            ReactJS, Styled-Components, Typescript.
                         </C.TechDescription>
                     </C.BodyText>
                 </C.BodyProject>

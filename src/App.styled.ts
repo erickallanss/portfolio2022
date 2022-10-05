@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import whatsbg from './assets/images/whatsbg.png';
 import { Link } from 'react-router-dom';
 
 type PropsMenu = {
@@ -46,8 +45,8 @@ export const MainBar = styled.nav(({ scrollChanges }: Props) => (`
 `));
 
 export const Logo = styled.img(({ scrollChanges }: Props) => (`
-    min-height: 50px;
-    max-height: 60px;
+    min-height: 40px;
+    max-height: 50px;
     height: 15vw;
     margin-left: 30px;
     cursor: pointer;
@@ -62,7 +61,7 @@ export const Logo = styled.img(({ scrollChanges }: Props) => (`
 
 export const MenuIcon = styled.img`
     min-height: 30px;
-    max-height: 40px;
+    max-height: 30px;
     height: 15vw;
     margin-right: 30px;
         @media (min-width: 1024px) {
@@ -130,8 +129,7 @@ export const SocialBar = styled.div`
     `;
 
 export const SocialIcon = styled.img(({ scrollChanges }: Props) => (`
-    min-width: 50px;
-    width: 5vw;
+    width: 40px;
     height: auto;
         @media (min-width: 1024px) {
             width: ${scrollChanges ? '3vw' : '5vw'};
@@ -146,22 +144,25 @@ export const SocialIcon = styled.img(({ scrollChanges }: Props) => (`
 `));
 
 export const MenuScreen = styled.div(({ menuOn }: PropsMenu) => (`
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.95);
     position: fixed;
     min-height: inherit;
     min-width: inherit;
     color: #FFFFFF;
-    display: ${menuOn ? 'flex' : 'none'};
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     top: 0px;
+    bottom: 0;
+    transition: 0.5s;
+    left: ${menuOn ? '0' : '100vw'};
     height: 100%;
     width: 100%;
 `));
 
 export const Item = styled.div`
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
 `;
@@ -171,6 +172,7 @@ export const closeIcon = styled.img(({ menuOn }: PropsMenu) => (`
     height: 20px;
     top: 40px;
     right: 40px;
+    display: ${menuOn ? 'flex' : 'none'};
 `));
 
 export const StyledLink = styled(Link)`
