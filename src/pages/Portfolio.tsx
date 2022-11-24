@@ -64,10 +64,10 @@ export const Portfolio = () => {
                             </C.LinkA>
                         </C.HeaderProject>
                         <C.Description>
-                            Projeto desenvolvido para planejamento de atividades no início do dia. É possível adicionar novas tarefas, definí-las como concluídas, e deletá-las. As tarefas ficam armazenadas em um banco de dados, sendo possível acessá-las posteriormente de outros dispositivos. A aplicação web é responsiva e o Heroku foi utilizado para deploy, além do banco de dados PostgreSQL da mesma plataforma.
+                            Projeto de to-do list, para organização de atividades do dia a dia. É possível adicionar novas tarefas, definí-las como concluídas, e deletá-las, dentro da conta do usuário. As tarefas ficam armazenadas em um banco de dados, sendo possível acessá-las posteriormente de outros dispositivos. A aplicação web é responsiva e o Heroku foi utilizado para deploy, além do banco de dados PostgreSQL da mesma plataforma. Para teste, caso não necessite criar uma conta, utilize "usuario123" como login, e "senha123" como senha.
                         </C.Description>
                         <C.TechDescription>
-                            ReactJS, TailwindCSS, NodeJS, Express e PostgreSQL.
+                            ReactJS, TailwindCSS, NodeJS, Express, Heroku, PostgreSQL.
                         </C.TechDescription>
                     </C.BodyText>
                 </C.BodyProject>
