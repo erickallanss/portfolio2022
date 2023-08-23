@@ -15,7 +15,6 @@ import { Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Sobre } from './pages/Sobre';
 import { Portfolio } from './pages/Portfolio';
-import { Contato } from './pages/Contato';
 import { NotFound } from './pages/NotFound';
 
 
@@ -63,7 +62,7 @@ const App = () => {
                             <C.LinkA href={ResumeFile} download>Currículo</C.LinkA>
                         </C.MenuItem>
                         <C.MenuItem>
-                            <C.StyledLink to='/contato'>Contato</C.StyledLink>
+                            <C.StyledLinkOut href='https://medium.com/@erickallanss' target='_blank' rel="noreferrer"> Blog</C.StyledLinkOut>
                         </C.MenuItem>
                     </C.Menu>
 
@@ -71,9 +70,9 @@ const App = () => {
                 </C.MainBar>
                 <C.SocialBar>
                     <a href='https://wa.me/5584996501098' target='_blank' rel="noreferrer"><C.SocialIcon src={WhatsappIcon} scrollChanges={scrollChanges}/></a>
-                    <a href='https://www.linkedin.com/in/erickallansilva/' target='_blank' rel="noreferrer"><C.SocialIcon src={LinkedinIcon}  scrollChanges={scrollChanges}/></a>
+                    <a href='https://www.linkedin.com/in/erickallanss/' target='_blank' rel="noreferrer"><C.SocialIcon src={LinkedinIcon}  scrollChanges={scrollChanges}/></a>
                     <a href='mailto:erickallann@gmail.com' target='_blank' rel="noreferrer"><C.SocialIcon src={EmailIcon}  scrollChanges={scrollChanges}/></a>
-                    <a href='https://github.com/erickallandev' target='_blank' rel="noreferrer"><C.SocialIcon src={GitHubIcon}  scrollChanges={scrollChanges}/></a>
+                    <a href='https://github.com/erickallanss' target='_blank' rel="noreferrer"><C.SocialIcon src={GitHubIcon}  scrollChanges={scrollChanges}/></a>
                 </C.SocialBar>
                 <C.MenuScreen menuOn={menuOn}>
                     <C.closeIcon src={closeIcon} menuOn={menuOn} onClick={handleClickMenu}></C.closeIcon>
@@ -83,7 +82,8 @@ const App = () => {
                     <C.Item onClick={handleClickMenu}><C.StyledLink to='/sobre'>Sobre</C.StyledLink></C.Item>
                     <C.Item onClick={handleClickMenu}><C.StyledLink to='/portfolio'>Portfólio</C.StyledLink></C.Item>
                     <C.Item onClick={handleClickMenu}><C.LinkA href={ResumeFile} download>Currículo</C.LinkA></C.Item>
-                    <C.Item onClick={handleClickMenu}><C.StyledLink to='/contato'>Contato</C.StyledLink></C.Item>
+                    <C.Item>
+                    <C.StyledLinkOut href='https://medium.com/@erickallanss' target='_blank' rel="noreferrer"> Blog</C.StyledLinkOut></C.Item>
 
 
                 </C.MenuScreen>
@@ -92,14 +92,13 @@ const App = () => {
                         <Route path="/" element={<Home />} />
                         <Route path="/sobre" element={<Sobre />} />
                         <Route path="/portfolio" element={<Portfolio />} />
-                        <Route path="/contato" element={<Contato />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </C.Content>
                 <C.ArrowToTop scrollChanges = {scrollChanges} onClick={() => window.scrollTo(0, 0)}>
                     <C.ArrowImg src={UpArrowIcon} alt='' />
                 </C.ArrowToTop>
-                <C.Footer> EA Web Dev © 2022 - Developed by Erick Allan Silva </C.Footer>
+                <C.Footer> EA Web Dev © 2023 - Developed by Erick Allan Silva </C.Footer>
             </C.Screen>
 
         </C.Container>

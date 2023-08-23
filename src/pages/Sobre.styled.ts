@@ -5,30 +5,46 @@ export const SobreContent = styled.div`
     flex-direction: column;
 `;
 
+export const ContentAndPhoto = styled.div`
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center; 
+    justify-content: center;
+        @media (min-width:1024px) {
+            flex-direction: row;
+        }
+`
+
 export const ContentHeader = styled.h1`
     color: #F9A826;
-    text-align: center;
+    text-align: start;
     font-size: 1.8rem;
-    margin: 50px 0 10px 0;
+    margin: 50px auto 10px auto;
         @media (min-width:1024px) {
             font-size: 2.2rem;
             text-transform: uppercase;
+            margin-top: 100px;
+            text-align: start;
+            margin-left: 50px;
+            margin-bottom: -100px;
         }
 `;
 
 export const ImageDiv = styled.div`
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 80%;
     max-width: 320px;
-    margin: 30px auto;
         @media (min-width:1024px) {
                 max-width: 512px;
-                margin: 60px auto;
+                margin-top: -40px
             }
 `;
 
 export const Image = styled.img`
-    width: 100%;
+    width: 80%;
 `;
 
 export const ContentText = styled.div`
@@ -37,9 +53,10 @@ export const ContentText = styled.div`
     color: #fff;
     margin: 20px 0;
         @media (min-width:1024px) {
-                width: 70%;
-                margin: 20px auto;
-                font-size: 1.5rem;
+                width: 50%;
+                margin: 0px auto;
+                font-size: 1.4rem;
+                margin-top: 150px;
         }
 `;
 

@@ -9,23 +9,23 @@ import NodeIcon from '../assets/images/icons/nodejsIcon.png'
 import SassIcon from '../assets/images/icons/icon18.png'
 import FigmaIcon from '../assets/images/icons/icon19.png'
 import GitIcon from '../assets/images/icons/icon20.png'
-import Image from '../assets/images/icons/SobreImage.svg';
+import Image from '../assets/images/ImageErick.png';
 
 export const Sobre = () => {
     return (
         <C.SobreContent>
             <C.ContentHeader>
-                Olá! Tudo bem?
+                Olá! <br/>Eu sou o Erick!
             </C.ContentHeader>
-            <C.ImageDiv>
-                <C.Image src={Image} alt='' />
-            </C.ImageDiv>
-            <C.ContentText>
-                Eu sou o Erick Allan, um entusiasta do uso de tecnologias em geral, especialmente para resolver problemas cotidianos. O desenvolvimento de websites e sistemas Web tem o poder de impusionar os mais variados tipos de negócios do mercado. Quer impulsionar o seu negócio? Precisa expandir a visibilidade dos seus produtos? Precisa atrair mais clientes? Tudo isso pode ser alcançado através do uso de tecnologias Web, e eu estou aqui para te ajudar com isso.
-            </C.ContentText>
-            <C.ContentText>
-                Atualmente eu desenvolvo utilizando tecnologias como HTML5, CSS3, Bootstrap, Javascript, Typescript, NodeJS, ReactJS, Tailwind CSS, CSS Modules, Styled Components e SASS. Também utilizo Whimsical e Figma para o planejamento e desenho dos projetos, além de Git e GitHub para versionamento de código.
-            </C.ContentText>
+            <C.ContentAndPhoto>
+                <C.ContentText>
+                    Eu sou um entusiasta do uso de tecnologias em geral, especialmente na resolução de problemas e melhoria de processos. O desenvolvimento sistemas Web tem o poder de impusionar os mais variados tipos de negócios do mercado. Você quer impulsionar o seu negócio? Precisa expandir a visibilidade dos seus produtos? Precisa atrair mais clientes? Tudo isso pode ser alcançado através do uso de tecnologias Web, e eu estou aqui para te ajudar com isso.<br/><br/>
+                    Atualmente eu desenvolvo utilizando tecnologias como Javascript, Typescript, NodeJS, ReactJS, Python, Django, bancos de dados relacionais e não relacionais, além de sempre ter por perto uma boa caneca de café.
+                </C.ContentText>
+                <C.ImageDiv>
+                    <C.Image src={Image} alt='' />
+                </C.ImageDiv>
+            </C.ContentAndPhoto>
             <C.TechIcons>
                 <C.TechIcon>
                     <C.IconImg src={HTMLIcon} alt='' />

@@ -47,15 +47,14 @@ export const MainBar = styled.nav(({ scrollChanges }: Props) => (`
 export const Logo = styled.img(({ scrollChanges }: Props) => (`
     min-height: 40px;
     max-height: 50px;
-    height: 15vw;
     margin-left: 30px;
     cursor: pointer;
     transition: 0.3s;
         @media (min-width: 1024px) {
             max-height: 180px;
-            margin-top: ${scrollChanges ? '2%' : '8%'};
+            margin-top: 2%;
             margin-left: ${scrollChanges ? '40px' : '30px'};
-            width: ${scrollChanges ? '80px' : '15vw'};
+            width: ${scrollChanges ? '80px' : '5vw'};
         }
 `));
 
@@ -83,11 +82,11 @@ export const MenuItem = styled.div(({ isActive }: MenuActive) => (`
     padding: 10px 20px;
     margin: 5px;
     text-transform: uppercase;
-    border-bottom: ${isActive ? '1px solid #F9A826' : '1px solid #00000F'};
+    border-bottom: ${isActive ? '3px solid #F9A826' : '3px solid #00000F'};
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 800;
         :hover {
-            border-bottom: 1px solid #F9A826;
+            border-bottom: 3px solid #F9A826;
             color: #F9A826;
         }
 `));
@@ -132,7 +131,7 @@ export const SocialIcon = styled.img(({ scrollChanges }: Props) => (`
     width: 40px;
     height: auto;
         @media (min-width: 1024px) {
-            width: ${scrollChanges ? '3vw' : '5vw'};
+            width: ${scrollChanges ? '2vw' : '3vw'};
             transition: 0.2s;
             margin-bottom: 10px;
                 :hover {
@@ -176,6 +175,14 @@ export const closeIcon = styled.img(({ menuOn }: PropsMenu) => (`
 `));
 
 export const StyledLink = styled(Link)`
+    color: #fff;
+    text-decoration: none;
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+    }
+`;
+
+export const StyledLinkOut = styled.a`
     color: #fff;
     text-decoration: none;
     &:focus, &:hover, &:visited, &:link, &:active {
