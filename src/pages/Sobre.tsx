@@ -19,8 +19,8 @@ export const Sobre = () => {
             </C.ContentHeader>
             <C.ContentAndPhoto>
                 <C.ContentText>
-                    Eu sou um entusiasta do uso de tecnologias em geral, especialmente na resolução de problemas e melhoria de processos. O desenvolvimento sistemas Web tem o poder de impusionar os mais variados tipos de negócios do mercado. Você quer impulsionar o seu negócio? Precisa expandir a visibilidade dos seus produtos? Precisa atrair mais clientes? Tudo isso pode ser alcançado através do uso de tecnologias Web, e eu estou aqui para te ajudar com isso.<br/><br/>
-                    Atualmente eu desenvolvo utilizando tecnologias como Javascript, Typescript, NodeJS, ReactJS, Python, Django, bancos de dados relacionais e não relacionais, além de sempre ter por perto uma boa caneca de café.
+                    Eu sou um entusiasta do uso de tecnologias em geral, especialmente na resolução de problemas e melhoria de processos. O desenvolvimento de sistemas Web tem o poder de impusionar os mais variados tipos de negócios do mercado. Você quer impulsionar o seu negócio? Precisa expandir a visibilidade dos seus produtos? Precisa atrair mais clientes? Tudo isso pode ser alcançado através do uso da tecnologia, e eu estou aqui para te ajudar com isso.<br/><br/>
+                    Atualmente eu desenvolvo utilizando tecnologias como Javascript, Typescript, NodeJS, ReactJS, Python, Django, bancos de dados relacionais e não relacionais, além de sempre ter por perto uma boa caneca de café. E aí, quando vamos conversar sobre o seu projeto?
                 </C.ContentText>
                 <C.ImageDiv>
                     <C.Image src={Image} alt='' />
