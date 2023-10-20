@@ -4,6 +4,8 @@ import Project2Photo from '../assets/images/project2.jpg'
 import Project3Photo from '../assets/images/project3.jpg'
 import Project4Photo from '../assets/images/project4.jpg'
 import Project5Photo from '../assets/images/project5.jpg'
+import Project6Photo from '../assets/images/project6.jpg'
+
 
 export const Portfolio = () => {
     return (
@@ -11,6 +13,35 @@ export const Portfolio = () => {
             <C.Title>
                 Projetos
             </C.Title>
+
+            <C.ProjectDiv>
+                <C.HeaderProjectMobo>
+                    <C.LinkA target='_blank' href=''>
+                        Sistema de Gestão para Clínicas
+                    </C.LinkA>
+                </C.HeaderProjectMobo>
+                <C.BodyProject>
+
+                    <C.BodyImage>
+                        <C.LinkA target='_blank' href='https://github.com/erickallanss/gestaoclinica/blob/main/README.md'>
+                            <C.Image src={Project6Photo} alt='' />
+                        </C.LinkA>
+                    </C.BodyImage>
+                    <C.BodyText>
+                        <C.HeaderProject>
+                            <C.LinkA target='_blank' href='https://github.com/erickallanss/gestaoclinica/blob/main/README.md'>
+                            Sistema de Gestão para Clínicas
+                            </C.LinkA>
+                        </C.HeaderProject>
+                        <C.Description>
+                            Sistema de gestão de clínicas médicas, com login de usuário, para o controle do gerenciamento de clínicas que lidam com agendamento de consultas. O dashboard inicial mostra do lado esquerdo a lista de pacientes agendados para o dia atual, e do lado direito, a lista de pacientes realmente confirmados (que compareceram no dia e estão aguardando serem chamados). O sistema ainda conta com módulos de gerenciamento de médicos, pacientes e consultas.
+                        </C.Description>
+                        <C.TechDescription>
+                            Python, Django, Bootstrap.
+                        </C.TechDescription>
+                    </C.BodyText>
+                </C.BodyProject>
+            </C.ProjectDiv>
 
             <C.ProjectDiv>
                 <C.HeaderProjectMobo>
@@ -40,9 +71,6 @@ export const Portfolio = () => {
                     </C.BodyText>
                 </C.BodyProject>
             </C.ProjectDiv>
-
-
-
 
             <C.ProjectDiv>
                 <C.HeaderProjectMobo>
