@@ -110,7 +110,32 @@ export const BodyImage = styled.div`
         }
 `;
 
+export const BodyVerticalImage = styled.div`
+
+    max-width: 320px;
+    display: flex;
+    margin: 0 auto;
+    background-color: #FFF;
+        @media (min-width: 1024px) {
+            transition: 0.3s;
+            border: 2px solid transparent;
+            border-radius: 20px;
+                :hover {
+                    border: 2px solid #fff;
+                    box-shadow: 0 0 20px #fff;
+                }
+        }
+`;
+
 export const Image = styled.img`
+    width: 100%;
+    height: 100%;
+    @media (min-width: 1024px) {
+        border-radius: 20px;
+    }
+`;
+
+export const VerticalImage = styled.img`
     width: 100%;
     height: 100%;
     @media (min-width: 1024px) {

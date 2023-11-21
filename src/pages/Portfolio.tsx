@@ -5,6 +5,7 @@ import Project3Photo from '../assets/images/project3.jpg'
 import Project4Photo from '../assets/images/project4.jpg'
 import Project5Photo from '../assets/images/project5.jpg'
 import Project6Photo from '../assets/images/project6.jpg'
+import Project7Photo from '../assets/images/project7.png'
 
 
 export const Portfolio = () => {
@@ -13,6 +14,35 @@ export const Portfolio = () => {
             <C.Title>
                 Projetos
             </C.Title>
+
+            <C.ProjectDiv>
+                <C.HeaderProjectMobo>
+                    <C.LinkA target='_blank' href=''>
+                        Chatbot para o curso "Tendências na Comunicação em Vendas" do Senac-RN
+                    </C.LinkA>
+                </C.HeaderProjectMobo>
+                <C.BodyProject>
+
+                    <C.BodyVerticalImage>
+                        <C.LinkA target='_blank' href=''>
+                            <C.VerticalImage src={Project7Photo} alt='' />
+                        </C.LinkA>
+                    </C.BodyVerticalImage>
+                    <C.BodyText>
+                        <C.HeaderProject>
+                            <C.LinkA target='_blank' href=''>
+                            Chatbot para o curso "Tendências na Comunicação em Vendas" do Senac-RN
+                            </C.LinkA>
+                        </C.HeaderProject>
+                        <C.Description>
+                            Chatbot desenvolvido usando Node.js para auxiliar os alunos do curso de "Tendências na Comunicação em Vendas", do Senac-RN. O bot interage com o aluno para enviá-lo conteúdos complementares ao curso que o aluno está acompanhando, além de rodar simulações de situações de venda, para que o aluno exercite o que está aprendendo. O projeto foi feito usando a api node-telegram-bot-api, e implantado na Azure, como um App Service.
+                        </C.Description>
+                        <C.TechDescription>
+                            Node.js, Typescript, node-telegram-bot-api, Prisma, Cron, Azure, PostgreSQL.
+                        </C.TechDescription>
+                    </C.BodyText>
+                </C.BodyProject>
+            </C.ProjectDiv>
 
             <C.ProjectDiv>
                 <C.HeaderProjectMobo>
