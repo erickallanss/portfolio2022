@@ -115,6 +115,7 @@ export const SocialBar = styled.div`
     bottom: 0;
     background-color: #00000f;
     width: 100%;
+    z-index: 100;
     @media (min-width: 1024px) {
         flex-direction: column;
         height: 80%;
@@ -158,6 +159,7 @@ export const MenuScreen = styled.div(({ menuOn }: PropsMenu) => (`
     left: ${menuOn ? '0' : '100vw'};
     height: 100%;
     width: 100%;
+    z-index: 100;
 `));
 
 export const Item = styled.div`
